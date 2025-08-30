@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mood Music</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="nav">
+        <div class="logo">Mood<span>Music</span></div>
+        <div class="links">
+            <a href="index.html">Home</a>
+            <a href="/about">About</a>
+            <a href="/contact">Contact</a>
+        </div>
+        <button id="themeToggle">🌙</button>
+    </nav>
+
+    <section class="intro">
+        <h1>Welcome to Mood Music</h1>
+        <p>Your go-to place for music that matches your mood.</p>
+    </section>
+
+    <div class="container">
+        <div class="input_section">
+            <input type="text" placeholder="Tell me something about your mood" id="moodInput">
+            <div class="links_select">
+                <select name="link" id="link-select">
+                    <option value="" disabled selected>Choose a platform</option>
+                    <option value="both">Both</option>
+                    <option value="spot">Spotify</option>
+                    <option value="yt">Youtube</option>
+                </select>
+            </div>
+            <div class="lang_select">
+                <select name = "language" id = "language-select">
+                    <option value="" disabled selected>Choose a language</option>
+                    <option value="random">Random</option>
+                    <option value="english">English</option>
+                    <option value="hindi">Hindi</option>
+                    <option value="punjabi">Punjabi</option>
+                    <option value="bengali">Bengali</option>
+                </select>
+            </div>
+        </div>
+        <button id="sendButton"><img src="send.png" alt="Send"></button>
+    </div>
+
+    <!-- Results -->
+    <section class="results">
+        <h2>Recommended Songs</h2>
+        <div id="responseArea"></div>
+    </section>
+
+    
+    <script src="script.js"></script>
+</body>
+
+</html>
